@@ -5,7 +5,6 @@ import threading
 import json
 import traceback
 
-
 PORT = 8000
 # Define the handler for the web server
 class MyHandler(http.server.SimpleHTTPRequestHandler):
@@ -15,10 +14,22 @@ class MyHandler(http.server.SimpleHTTPRequestHandler):
         
 
     def do_GET(self):
-        self.send_response(200)
-        self.send_header("Content-type", "text/html; charset=utf-8")
-        self.end_headers()
-        super().do_GET()
+        if self.path == '/data.json':
+            self.send_response(200)
+            # Set the response headers
+            self.send_header('Content-type', 'application/json')
+            self.end_headers()
+            data = open('data.json', 'r', encoding='utf-8')
+            response = json.load(data)
+            resp_json = json.dumps(response)
+            # Send the response data as JSON string
+            self.wfile.write(resp_json.encode())
+        else:
+            #self.send_response(200)
+            #self.send_header("Content-type", "text/html; charset=utf-8")
+            #self.end_headers()
+            #super().do_GET()
+            return http.server.SimpleHTTPRequestHandler.do_GET(self)
     
     def do_POST(self):
         if self.path == '/start':

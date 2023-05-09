@@ -55,79 +55,111 @@
 </head>
 <body>
 	<!-- Screens -->
-	<div class="screen" id="screen-1">
+	<div class="screen" id="screen">
 		<!--<h1>Screen 1</h1> -->
-		<p>MT Experiment</p>
-        <button class="start-button" id="start-button" onclick="startButtonClick()">Start</button>
+		<p>Eye-Tracking MT Evaluation Experiment</p>
+		<p>In this experiment you will be asked to:</p>
+		<ul>
+			<li>1. Read the source English sentence and two Russian translations carefully.</li>
+			<li>2. Choose the best translation by clicking button '1' or '2' respectivelty.</li>
+			<li>3. Click on problematic words in worst translation.</li>
+			<li>4. Try not to change the position of your head through the experiment.</li>
+		</ul>
 	</div>
-	<div class="screen" id="screen-2">
-		<!--<h1>Screen 2</h1>-->
-		<p>But you’re going to fucking tell me which procedure you would recommend, because I don’t know another one that is gonna help this poor kid”.</p>
-        <p>1. Но ты, блядь, скажешь мне, какую процедуру ты бы порекомендовал, потому что я не знаю другой, которая помогла бы этому бедному ребенку”.</p>
-		<button class="choice-button" id="choice-button" onclick=" choice1Click()">1</button>
-		<br>
-		<p>2. Но ты собираешься, черт возьми, сказать мне, какую процедуру ты бы порекомендовал, потому что я не знаю другой, которая поможет этому бедному парню ".</p>
-		<button class="choice-button" id="choice-button" onclick=" choice2Click()">2</button>
-		<button class="next-button" id="next-button" onclick="buttonClick()">Next</button>
-    </div>
-	<div class="screen" id="screen-3">
-		<!--<h1>Screen 3</h1>-->
-		<p>As it turns out this procedure is generally hated by insurance because it’s pretty expensive.</p>
-		<p>1. Как оказалось, страховая компания обычно ненавидит эту процедуру, потому что она довольно дорогая.</p>
-		<button class="choice-button" id="choice-button" onclick=" choice1Click()">1</button>
-		<br>
-		<p>2. Как оказалось, эту процедуру обычно ненавидит страховка, потому что она довольно дорогая.</p>
-		<button class="choice-button" id="choice-button" onclick=" choice2Click()">2</button>
-        <button class="next-button" id="next-button" onclick="buttonClick()">Next</button>
-	</div>
-	<div class="screen" id="screen-4">
-		<!--<h1>Screen 4</h1>-->
-		<p>One of them was pretty infamous in town for always being in trouble with the law.</p>
-		<p>1. Один из них был довольно печально известен в городе тем, что всегда имел проблемы с законом.</p>
-		<button class="choice-button" id="choice-button" onclick=" choice1Click()">1</button>
-		<br>
-		<p>2. Один из них был довольно печально известен в городе тем, что всегда имел проблемы с законом.</p>
-		<button class="choice-button" id="choice-button" onclick=" choice2Click()">2</button>
-        <button class="next-button" id="next-button" onclick="buttonClick()">Next</button>
-	</div>
-	<div class="screen" id="screen-5">
-		<!--<h1>Screen 5</h1>-->
-		<p>Buffer screen.</p>
-        <button class="next-button" id="next-button" onclick="buttonClick()">Next</button>
-	</div>
+	<!-- Next button -->
+	<button class="next-button" id="next-button" onclick="nextClick()">Next</button>
 	<!-- End button -->
 	<button class="next-button" id="next-button" onclick="endClick()">End</button>
 	
 	<!-- Clicked words list -->
-	<h2>Clicked Words:</h2>
-	<ul id="clicked-words"></ul>
+	<!--<h2>Clicked Words:</h2>-->
+	<!--<ul id="clicked-words"></ul>-->
 	
 	<script>
+		
 		// Initialize variables
 		var currentScreen = 1;
+		const dataContainer = document.getElementById('data-container');
 		var numScreens = document.getElementsByClassName("screen").length;
 		var nextButton = document.getElementById("next-button");
         var startButton = document.getElementById("start-button");
 		var clickedWordsList = document.getElementById("clicked-words");
 		var clickedWords = [];
+		var indices = Array.from(Array(5).keys());
+		var permutation = shuffle(indices);
+		console.log(permutation);
 
 		// Add click event listener to Next button
-		nextButton.addEventListener("click", nextScreen);
-		startButton.addEventListener("click", nextScreen); 
+		//nextButton.addEventListener("click", nextScreen);
+		//startButton.addEventListener("click", nextScreen); 
+
+		// To shuffle the array of trial indices
+		function shuffle(array) {
+			let currentIndex = array.length, randomIndex;
+		  
+			// While there remain elements to shuffle.
+			while (currentIndex != 0) {
+		  
+			  // Pick a remaining element.
+			  randomIndex = Math.floor(Math.random() * currentIndex);
+			  currentIndex--;
+		  
+			  // And swap it with the current element.
+			  [array[currentIndex], array[randomIndex]] = [
+				array[randomIndex], array[currentIndex]];
+			}
+		  
+			return array;
+		  }
+
+		function displayRandom(arr) {
+			var out = "";
+			console.log(this.currentScreen);
+			i = permutation[currentScreen-1];
+			out += '<p>' + arr[i].src + 
+				'</p><br><p>' + arr[i].cand1 +
+				'</p><br><button class="choice-button" id="choice-button" onclick=" choice1Click()">1</button><br><p>' +
+				arr[i].cand2 + 
+				'</p><br><button class="choice-button" id="choice-button" onclick=" choice2Click()">2</button>';
+			document.getElementById("screen").innerHTML = out;
+			makeAllWordsClickableAgain();
+		  }
 		
 		// Function to switch between screens
 		function nextScreen() {
 			document.getElementById("screen-" + currentScreen).style.display = "none";
-			currentScreen++;
-			console.log(currentScreen);
-			console.log(numScreens);
-			if (currentScreen > numScreens) {
-				currentScreen = 1;
-			}
-			document.getElementById("screen-" + currentScreen).style.display = "block";
+			//currentScreen++;
+			//console.log(currentScreen);
+			//console.log(numScreens);
+			//if (currentScreen > numScreens) {
+			//	currentScreen = 1;
+			//}
+			//document.getElementById("screen-" + currentScreen).style.display = "block";
 		}
 		
 		// Add click event listeners to all words
+		function makeAllWordsClickableAgain() {
+			document.querySelectorAll('.screen p').forEach((paragraph) => {
+				var words = paragraph.innerText.split(" ");
+				paragraph.innerHTML = "";
+				for (var i = 0; i < words.length; i++) {
+					var word = words[i];
+					var span = document.createElement("span");
+					span.innerHTML = word + " ";
+					span.addEventListener("click", function() {
+						if (!this.classList.contains("clicked")) {
+							clickedWords.push(this.innerHTML.trim());
+							console.log(clickedWords);
+							this.classList.add("clicked");
+							var li = document.createElement("li");
+							li.innerHTML = this.innerHTML.trim();
+							//clickedWordsList.appendChild(li);
+						}
+					});
+					paragraph.appendChild(span);
+				}
+			});
+		}
 		document.querySelectorAll('.screen p').forEach((paragraph) => {
 			var words = paragraph.innerText.split(" ");
 			paragraph.innerHTML = "";
@@ -148,16 +180,27 @@
 			}
 		});
 		
-		function buttonClick(clickedWordsList) {
-			fetch('/next', { 
-				method: 'POST',
-				body: JSON.stringify(clickedWords),
-			});
-			clickedWords = [];
-		}
-
-        function startButtonClick() {
-			fetch('/start', { method: 'POST' });
+		function nextClick() {
+			if (this.currentScreen != 1) {
+				fetch('/next', { 
+					method: 'POST',
+					body: JSON.stringify(this.clickedWords),
+				});
+				clickedWords = [];
+			}
+			if (this.currentScreen == 1) {
+				fetch('/start', { method: 'POST' });
+			}
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+					var resp = JSON.parse(this.responseText);
+					displayRandom(resp);
+				}
+			};
+			xhttp.open('GET', '/data.json', true);
+			xhttp.send();
+			this.currentScreen = currentScreen + 1;
 		}
 
 		function choice1Click() {
@@ -176,7 +219,7 @@
 		}
 
 		// Show the first screen
-		document.getElementById("screen-1").style.display = "block";
+		document.getElementById("screen").style.display = "block";
 	</script>
 </body>
 </html>
