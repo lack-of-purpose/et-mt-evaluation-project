@@ -1,0 +1,80 @@
+[{
+    "id": 53,
+    "src": "Salmonella outbreak sickens 212 people in 23 states",
+    "cand1": "Вспышка сальмонеллы поразила 212 человек в 23 штатах",
+    "sys1": "FacebookAI",
+    "cand2": "Вспышка сальмонеллы унесла жизни 212 человек в 23 штатах",
+    "sys2": "Online-G"
+},
+{
+    "id": 54,
+    "src": "July 25 (UPI) -- The Centers for Disease Control and Prevention is investigating an outbreak of salmonella that has sickened 212 people in 23 states.",
+    "cand1": "25 июля (UPI) -- Центры по контролю и профилактике заболеваний расследуют вспышку сальмонеллы, в результате которой заболели 212 человек в 23 штатах.",
+    "sys1": "Online-W",
+    "cand2": "25 июля (UPI) - Центры по контролю и профилактике заболеваний расследуют вспышку сальмонеллы, от которой заболели 212 человек в 23 штатах.",
+    "sys2": "FacebookAI"
+},
+{
+    "id": 55,
+    "src": "In a Friday press release the CDC reported that 87 people had become ill since its last update on the outbreak Tuesday.",
+    "cand1": "В пятничном пресс-релизе CDC сообщил, что 87 человек заболели с момента последнего обновления вспышки во вторник.",
+    "sys1": "Online-A",
+    "cand2": "В пятничном пресс-релизе CDC сообщил, что 87 человек заболели с момента последнего обновления информации о вспышке во вторник.",
+    "sys2": "FacebookAI"
+},
+{
+    "id": 56,
+    "src": "The agency said people began showing symptoms linked to a strain of salmonella, which can take two to four weeks to manifest symptoms, between June 19 and July 11.",
+    "cand1": "Агентство сообщило, что в период с 19 июня по 11 июля у людей начали проявляться симптомы, связанные со штаммом сальмонеллы, для проявления которых может потребоваться от двух до четырех недель.",
+    "sys1": "FacebookAI",
+    "cand2": "В агентстве сообщают, что с 19 июня по 11 июля у заболевших начали появляться симптомы, характерные для одного из штаммов сальмонеллы, инкубационный период которого составляет до четырех недель.",
+    "sys2": "refB"
+},
+{
+    "id": 57,
+    "src": "Thirty-one people have been hospitalized since the outbreak began, but no fatalities have been reported.",
+    "cand1": "Тридцать один человек был госпитализирован с начала вспышки, но о смертельных случаях не сообщалось.",
+    "sys1": "FacebookAI",
+    "cand2": "Тридцать один человек был госпитализирован с начала вспышки, но о погибших не сообщалось.",
+    "sys2": "Online-B"
+},
+{
+    "id": 58,
+    "src": "According to the CDC, a specific source for the salmonella strain has not been identified.",
+    "cand1": "По данным CDC, конкретный источник штамма сальмонеллы не был идентифицирован.",
+    "sys1": "FacebookAI",
+    "cand2": "По данным CDC, конкретный источник штамма сальмонеллы не выявлен.",
+    "sys2": "Online-Y"
+},
+{
+    "id": 59,
+    "src": "It has not issued any advisement against eating or consuming particular foods, nor named retailers that might be selling contaminated products.",
+    "cand1": "Они не выпустили никаких рекомендаций об избегании какой-либо еды, а также не назвали имен возможных продавцов зараженных продуктов.",
+    "sys1": "refA",
+    "cand2": "Он не выпустил никаких рекомендаций против употребления в пищу или потребления определенных продуктов, а также не назвал розничных продавцов, которые могли бы продавать зараженные продукты.",
+    "sys2": "FacebookAI"
+},
+{
+    "id": 60,
+    "src": "Oregon has had the most cases of salmonella, with 51 infections, with Utah following close behind with 40 reported cases.",
+    "cand1": "В Орегоне было зарегистрировано больше всего случаев сальмонеллеза-51 инфекция, а Юта следовала за ними с 40 зарегистрированными случаями.",
+    "sys1": "Online-G",
+    "cand2": "Больше всего случаев сальмонеллеза зарегистрировано в Орегоне - 51 заражение, за ним следует Юта с 40 зарегистрированными случаями.",
+    "sys2": "FacebookAI"
+},
+{
+    "id": 61,
+    "src": "Salmonella is a bacterial, foodborne illness that causes 1.35 million infections, 26,500 hospitalizations, and 420 deaths each year, according to the CDC.",
+    "cand1": "По данным CDC, сальмонелла - это бактериальное заболевание пищевого происхождения, которое ежегодно вызывает 1,35 миллиона случаев заражения, 26 500 госпитализаций и 420 смертей.",
+    "sys1": "Online-W",
+    "cand2": "По данным CDC, сальмонелла - это бактериальное заболевание пищевого происхождения, которое ежегодно вызывает 1,35 миллиона инфекций, 26 500 госпитализаций и 420 смертей.",
+    "sys2": "FacebookAI"
+},
+{
+    "id": 62,
+    "src": "The most common symptoms of salmonella infection are diarrhea, fever, and stomach cramps, which can begin between six hours and six days after exposure.",
+    "cand1": "Наиболее распространенными симптомами заражения сальмонеллой являются диарея, лихорадка и спазмы желудка, которые могут начаться в период от шести часов до шести дней после заражения.",
+    "sys1": "FacebookAI",
+    "cand2": "Наиболее частыми симптомами инфекции сальмонеллы являются диарея, лихорадка и спазмы желудка, которые могут начаться между шестью часами и шестью днями после заражения.",
+    "sys2": "Online-B"
+}]

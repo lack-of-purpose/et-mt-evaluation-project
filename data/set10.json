@@ -1,0 +1,80 @@
+[{
+    "id": 23,
+    "src": "I realized that, as I worked on improving AI task by task, dataset by dataset, that I was creating massive gaps, holes and blind spots in what it could understand.",
+    "cand1": "Я осознала, что, совершенствуя  искусственный интеллект, задачу за задачей, массив данных за массивом, я создала огромные бреши, дыры и пробелы в том,  что он мог понимать.",
+    "sys1": "refA",
+    "cand2": "Я понял, что, работая над улучшением ИИ задача за задачей, набор данных за набором данных, я создавал огромные пробелы, дыры и слепые пятна в том, что он мог понять.",
+    "sys2": "FacebookAI"
+},
+{
+    "id": 26,
+    "src": "I thought back to the evolution of the technology that brought me to where I was that day -- how the first color images were calibrated against a white woman's skin, meaning that color photography was biased against black faces.",
+    "cand1": "Я вспомнил эволюцию технологии, которая привела меня туда, где я был в тот день - как первые цветные изображения были откалиброваны по коже белой женщины, а это означало, что цветная фотография была предвзята к черным лицам.",
+    "sys1": "Online-A",
+    "cand2": "Я вспомнил эволюцию технологии, которая привела меня туда, где я был в тот день - как первые цветные изображения были откалиброваны по коже белой женщины, а это означало, что цветная фотография была смещена против черных лиц.",
+    "sys2": "Online-B"
+},
+{
+    "id": 64,
+    "src": "We have technology that crunches through our data, even data relating to our gender or our race, in order to determine whether or not we might get a loan.",
+    "cand1": "У нас есть технология, которая просматривает наши данные, даже данные, относящиеся к нашему полу или нашей расе, чтобы определить, можем ли мы получить кредит или нет.",
+    "sys1": "Online-G",
+    "cand2": "У нас есть технология, которая анализирует наши данные, даже данные, касающиеся нашего пола или расы, чтобы определить, можем ли мы получить кредит.",
+    "sys2": "Online-W"
+},
+{
+    "id": 84,
+    "src": "I want to ask you all to consider for a second the very simple fact that, by far, most of what we know about the universe comes to us from light.",
+    "cand1": "Я хочу попросить всех вас на секунду подумать об очень простом факте, что, безусловно, большая часть того, что мы знаем о Вселенной, приходит к нам из света.",
+    "sys1": "Online-Y",
+    "cand2": "Я хочу попросить вас всех подумать на секунду об очень простом факте, что, безусловно, большая часть того, что мы знаем о Вселенной, приходит к нам от света.",
+    "sys2": "FacebookAI"
+},
+{
+    "id": 96,
+    "src": "We might one day see a shadow a black hole can cast on a very bright background, but we haven't yet.",
+    "cand1": "Возможно, однажды мы увидим тень, которую черная дыра может отбросить на очень ярком фоне, но пока этого не произошло.",
+    "sys1": "Online-G",
+    "cand2": "Однажды мы можем увидеть тень, которую черная дыра может отбрасывать на очень яркий фон, но мы еще этого не сделали.",
+    "sys2": "Online-A"
+},
+{
+    "id": 110,
+    "src": "It was decades before the term \"black hole\" was coined and people realized that black holes are real astrophysical objects -- in fact they're the death state of very massive stars that collapse catastrophically at the end of their lifetime.",
+    "cand1": "Прошли десятилетия, прежде чем был изобретен термин «черная дыра», и люди осознали, что они являются реальными астрофизическими объектами — фактически, это очень массивные звезды в посмертном состоянии, катастрофическим образом разрушившиеся в конце своего жизненного цикла.",
+    "sys1": "refA",
+    "cand2": "Прошло несколько десятилетий, прежде чем появился термин \"черная дыра\", и люди поняли, что черные дыры являются реальными астрофизическими объектами - на самом деле это состояние смерти очень массивных звезд, которые катастрофически разрушаются в конце своей жизни.",
+    "sys2": "Online-W"
+},
+{
+    "id": 242,
+    "src": "Data from the World Health Organization shows that almost 14 percent of all deaths worldwide in 2012 were attributable to household and ambient air pollution, with most occurring in low- and middle-income countries.",
+    "cand1": "Данные Всемирной организации здравоохранения показывают, что почти 14 процентов всех смертей в мире в 2012 году были вызваны загрязнением воздуха в домах и окружающей среде, причем большинство из них произошло в странах с низким и средним уровнем доходов.",
+    "sys1": "Online-B",
+    "cand2": "Данные Всемирной организации здравоохранения показывают, что почти 14 процентов всех смертей во всем мире в 2012 году были связаны с загрязнением воздуха в домашних хозяйствах и окружающей среде, причем большинство из них приходится на страны с низким и средним уровнем дохода.",
+    "sys2": "Online-Y"
+},
+{
+    "id": 252,
+    "src": "I started by simply asking myself how I could bring together in some meaningful way my skills in software engineering and artificial intelligence and the expertise of the people I'd reached out to.",
+    "cand1": "Я начал с того, что просто спросил себя, как я могу каким-то значимым образом объединить свои навыки в разработке программного обеспечения и искусственного интеллекта и опыт людей, к которым я обратился.",
+    "sys1": "FacebookAI",
+    "cand2": "Я начал с того, что просто спросил себя, как я могу каким-то значимым образом объединить свои навыки в области разработки программного обеспечения и искусственного интеллекта, а также опыт людей, к которым я обратился.",
+    "sys2": "Online-A"
+},
+{
+    "id": 278,
+    "src": "Hello, my name is Dennis Hong, and we're bringing freedom and independence to the blind by building a vehicle for the visually impaired.",
+    "cand1": "Здравствуйте, меня зовут Деннис Хонг, и мы приносим свободу и независимость слепым, создавая автомобиль для слабовидящих.",
+    "sys1": "Online-G",
+    "cand2": "Здравствуйте, меня зовут Деннис Хонг, и мы дарим свободу и независимость слепым, создавая автомобиль для слабовидящих.",
+    "sys2": "Online-W"
+},
+{
+    "id": 367,
+    "src": "I approach photographing these icebergs as if I'm making portraits of my ancestors, knowing that in these individual moments they exist in that way and will never exist that way again.",
+    "cand1": "Я подхожу к фотографированию этих айсбергов так, как будто я делаю портреты моих предков, зная, что в эти отдельные моменты они существуют таким образом и больше никогда не будут существовать таким образом.",
+    "sys1": "Online-Y",
+    "cand2": "Я подхожу к фотографированию этих айсбергов, как если бы я делал портреты своих предков, зная, что в эти отдельные моменты они существуют таким образом и никогда больше не будут существовать таким образом.",
+    "sys2": "Online-B"
+}]

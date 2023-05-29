@@ -3,15 +3,21 @@ import socketserver
 import time
 import threading
 import json
-import traceback
+from eyeware.client import TrackerClient
 
 PORT = 8000
 # Define the handler for the web server
+def mock_track():
+    while 1:
+        with open('out.txt', 'a') as output:
+            ts = time.time()
+            output.write(str(ts))
+            output.write(" Coordinates x y\n")
+        time.sleep(1 / 60)
+
 class MyHandler(http.server.SimpleHTTPRequestHandler):
     timestamps = []
     problematic_words = []
-    #def do_PUT(self):
-        
 
     def do_GET(self):
         if self.path == '/data.json':
@@ -19,7 +25,7 @@ class MyHandler(http.server.SimpleHTTPRequestHandler):
             # Set the response headers
             self.send_header('Content-type', 'application/json')
             self.end_headers()
-            data = open('data.json', 'r', encoding='utf-8')
+            data = open('data/set7.json', 'r', encoding='utf-8')
             response = json.load(data)
             resp_json = json.dumps(response)
             # Send the response data as JSON string
@@ -39,7 +45,8 @@ class MyHandler(http.server.SimpleHTTPRequestHandler):
             # write data to file
             with open('out.txt', 'w') as output:
                 output.write(post_data.decode('utf-8'))
-                threading.Thread(target=self.mock_track).start()
+                #threading.Thread(target=self.mock_track).start()
+                thread_track.start()
             # send response
         elif self.path == '/next':
             # handle '/next' request
@@ -59,12 +66,12 @@ class MyHandler(http.server.SimpleHTTPRequestHandler):
             print('choice1 clicked!')
             ts = time.time()
             self.timestamps.append(f'End trial {ts}')
+            self.timestamps.append('Chosen option is 1')
         elif self.path == '/choice2':
-            #for line in traceback.format_stack():
-            #    print(line.strip())
             print('choice2 clicked!')
             ts = time.time()
             self.timestamps.append(f'End trial {ts}')
+            self.timestamps.append('Chosen option is 2')
         elif self.path == '/end':
             self.send_response(200)
             self.send_header("Content-type", "text/html; charset=utf-8")
@@ -92,23 +99,42 @@ class MyHandler(http.server.SimpleHTTPRequestHandler):
         self.send_response(200)
         self.send_header("Content-type", "text/html; charset=utf-8")
         self.end_headers()
-    
+        
     def mock_track(self):
         while 1:
             with open('out.txt', 'a') as output:
                 ts = time.time()
                 output.write(str(ts))
-                output.write(" coordinates\n")
-            #output.write('coordinates\n')
+                output.write(" Coordinates x y\n")
             time.sleep(1 / 60)
+
+    def track(self):
+        while 1:
+            with open('out.txt', 'a') as output:
+                if tracker.connected:
+                    ts = time.time()
+                    output.write(str(ts))
+                    screen_gaze = tracker.get_screen_gaze_info()
+                    screen_gaze_is_lost = screen_gaze.is_lost
+                    if not screen_gaze_is_lost:
+                        output.write(f' Coordinates x={screen_gaze.x}, y={screen_gaze.y}\n')
+                    time.sleep(1 / 60)
+                else:
+                    MESSAGE_PERIOD_IN_SECONDS = 2
+                    time.sleep(MESSAGE_PERIOD_IN_SECONDS - time.monotonic() % MESSAGE_PERIOD_IN_SECONDS)
+                    print("No connection with tracker server")
 
 # Create the web server
 with socketserver.TCPServer(("", PORT), MyHandler) as httpd:
     print("serving at port", PORT)
+    tracker = TrackerClient()
+    thread_track = threading.Thread(target=mock_track)
     try:
         httpd.serve_forever()
     except KeyboardInterrupt:
         #pass
-        httpd.server_close()
+        #httpd.server_close()
+        thread_track.join()
+        httpd.shutdown()
     # Serve the web pages indefinitely
     #httpd.serve_forever()

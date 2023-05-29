@@ -1,0 +1,80 @@
+[{
+    "id": 36,
+    "src": "Hat and parasol alert!",
+    "cand1": "Шляпа и зонтик наготове!",
+    "sys1": "Online-W",
+    "cand2": "Шапка и парасоль насторожить!",
+    "sys2": "Promt"
+},
+{
+    "id": 37,
+    "src": "\"The Gilded Age,\" created by Julian Fellowes (\"Downton Abbey\") and written by Fellowes and Sonja Warfield, premieres next month on HBO.",
+    "cand1": "Премьера фильма «Позолоченный век», созданного Джулианом Феллоузом («Аббатство Даунтон») по сценарию Феллоуса и Сони Уорфилд, состоится в следующем месяце на телеканале HBO.",
+    "sys1": "Promt",
+    "cand2": "В следующем месяце на HBO состоится премьера телесериала «Позолоченный век», созданного Джулианом Феллоузом («Аббатство Даунтон») по сценарию Феллоуза и Сони Уорфилд.",
+    "sys2": "refA"
+},
+{
+    "id": 38,
+    "src": "Set in 1880s New York, it follows Marian Brook (Louisa Jacobson, above left) and aspiring writer Peggy Scott (Denée Benton, right) as they newly encounter old-money society.",
+    "cand1": "Действие сериала происходит в 1880-х годах в Нью-Йорке, он рассказывает о Мэриан Брук (Луиза Джейкобсон, слева вверху) и начинающей писательнице Пегги Скотт (Дене Бентон, справа), когда они впервые сталкиваются со старым денежным обществом.",
+    "sys1": "Online-W",
+    "cand2": "Действие происходит в Нью-Йорке 1880-х годов, после того, как Мэриан Брук (Луиза Якобсон, вверху слева) и начинающая писательница Пегги Скотт (Дени Бентон, справа) вновь сталкиваются с обществом старых денег.",
+    "sys2": "Promt"
+},
+{
+    "id": 39,
+    "src": "Also in the cast are Christine Baranski, Cynthia Nixon, Carrie Coon and Morgan Spector, among many more.",
+    "cand1": "Также в актерском составе Кристин Барански, Синтия Никсон, Кэрри Кун, Морган Спектор и многие другие.",
+    "sys1": "Online-B",
+    "cand2": "Также в актерском составе Кристин Барански, Синтия Никсон, Кэрри Кун и Морган Спектор, среди многих других.",
+    "sys2": "Promt"
+},
+{
+    "id": 40,
+    "src": "Good fun for the winter, no?",
+    "cand1": "Хорошее веселье на зиму, нет?",
+    "sys1": "Promt",
+    "cand2": "Хорошее развлечение на зиму, не так ли?",
+    "sys2": "Online-Y"
+},
+{
+    "id": 41,
+    "src": "The costumes, which look to be quite lavish indeed, are designed by Kasia Walicka-Maimone, whose previous work includes \"The Goldfinch,\" \"A Quiet Place\" and \"Moonrise Kingdom.\"",
+    "cand1": "Костюмы, которые действительно выглядят довольно роскошно, разработаны Касией Валицкой-Маймоне, чьи предыдущие работы включают \"Щегла\", \"Тихое место\" и \"Королевство восхода луны\".",
+    "sys1": "Online-G",
+    "cand2": "Костюмы, которые действительно выглядят довольно пышными, разработаны Касией Валицкой-Маймоне, среди предыдущих работ которой «Щегол», «Тихое место» и «Королевство восхода луны».",
+    "sys2": "Promt"
+},
+{
+    "id": 42,
+    "src": "\"The Gilded Age\" begins streaming on HBO Max on Jan. 24th.",
+    "cand1": "«Позолоченный век» начинает транслироваться на HBO Max 24 января.",
+    "sys1": "Promt",
+    "cand2": "Трансляция телесериала «Позолоченный век» на HBO Max начинается 24 января.",
+    "sys2": "refA"
+},
+{
+    "id": 43,
+    "src": "Joe Biden Laments Failure to Stop Global Warming After Deadly Tornados",
+    "cand1": "Джо Байден посетовал на неспособность остановить глобальное потепление после смертельных торнадо",
+    "sys1": "Promt",
+    "cand2": "Джо Байден жалуется на неспособность остановить глобальное потепление после смертельных торнадо",
+    "sys2": "Online-Y"
+},
+{
+    "id": 44,
+    "src": "President Joe Biden lamented the world's failure to stop global warming on Saturday after addressing the deadly tornadoes that swept through several states.",
+    "cand1": "Президент США Джо Байден в субботу после обращения к смертоносным торнадо, пронесшимся по нескольким штатам, посетовал на то, что мир не в состоянии остановить глобальное потепление.",
+    "sys1": "Online-W",
+    "cand2": "Президент Джо Байден посетовал на то, что мир не смог остановить глобальное потепление в субботу после решения проблемы смертельных торнадо, прокатившихся по нескольким штатам.",
+    "sys2": "Promt"
+},
+{
+    "id": 45,
+    "src": "\"We all know that everything is more intense when the climate is warming.",
+    "cand1": "\"Мы все знаем, что все более интенсивно, когда климат нагревается.",
+    "sys1": "Promt",
+    "cand2": "«Мы все знаем, что все становится более интенсивным, когда климат теплеет.",
+    "sys2": "Online-B"
+}]

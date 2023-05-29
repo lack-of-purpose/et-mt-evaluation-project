@@ -85,9 +85,11 @@
         var startButton = document.getElementById("start-button");
 		var clickedWordsList = document.getElementById("clicked-words");
 		var clickedWords = [];
-		var indices = Array.from(Array(5).keys());
-		var permutation = shuffle(indices);
-		console.log(permutation);
+		var indices = Array.from(Array(10).keys());
+		console.log(indices);
+		//console.log(indices);
+		//var permutation = shuffle(indices);
+		//console.log(permutation);
 
 		// Add click event listener to Next button
 		//nextButton.addEventListener("click", nextScreen);
@@ -115,15 +117,17 @@
 		function displayRandom(arr) {
 			var out = "";
 			console.log(this.currentScreen);
-			i = permutation[currentScreen-1];
+			i = indices[this.currentScreen-2]; //permutation[this.currentScreen-2];
+			console.log('Element index');
+			console.log(i);
 			out += '<p>' + arr[i].src + 
 				'</p><br><p>' + arr[i].cand1 +
-				'</p><br><button class="choice-button" id="choice-button" onclick=" choice1Click()">1</button><br><p>' +
+				'</p><button class="choice-button" id="choice-button" onclick=" choice1Click()">1</button><br><p>' +
 				arr[i].cand2 + 
-				'</p><br><button class="choice-button" id="choice-button" onclick=" choice2Click()">2</button>';
+				'</p><button class="choice-button" id="choice-button" onclick=" choice2Click()">2</button>';
 			document.getElementById("screen").innerHTML = out;
 			makeAllWordsClickableAgain();
-		  }
+		}
 		
 		// Function to switch between screens
 		function nextScreen() {
@@ -180,17 +184,7 @@
 			}
 		});
 		
-		function nextClick() {
-			if (this.currentScreen != 1) {
-				fetch('/next', { 
-					method: 'POST',
-					body: JSON.stringify(this.clickedWords),
-				});
-				clickedWords = [];
-			}
-			if (this.currentScreen == 1) {
-				fetch('/start', { method: 'POST' });
-			}
+		function getData() {
 			var xhttp = new XMLHttpRequest();
 			xhttp.onreadystatechange = function() {
 				if (this.readyState == 4 && this.status == 200) {
@@ -200,7 +194,29 @@
 			};
 			xhttp.open('GET', '/data.json', true);
 			xhttp.send();
-			this.currentScreen = currentScreen + 1;
+		}
+
+		function nextClick() {
+			if ((this.currentScreen != 1) && ((this.currentScreen - 2) != this.indices.length)) {
+				fetch('/next', { 
+					method: 'POST',
+					body: JSON.stringify(this.clickedWords),
+				});
+				clickedWords = [];
+				getData();
+			    this.currentScreen = currentScreen + 1;
+			}
+			if (this.currentScreen == 1) {
+				fetch('/start', { method: 'POST' });
+				getData();
+			    this.currentScreen = currentScreen + 1;
+			}
+			if ((this.currentScreen - 2) == this.indices.length) {
+				fetch('/end', { 
+					method: 'POST',
+					body: JSON.stringify(clickedWords),
+				});
+			}
 		}
 
 		function choice1Click() {

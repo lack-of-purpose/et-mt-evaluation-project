@@ -1,0 +1,80 @@
+[{
+    "id": 23,
+    "src": "So to note, I didn’t witness this.",
+    "cand1": "Итак, чтобы отметить, я не был свидетелем этого.",
+    "sys1": "Online-G",
+    "cand2": "Так что замечу, что я этого не видел.",
+    "sys2": "Online-Y"
+},
+{
+    "id": 24,
+    "src": "I was told this by co-workers at my first retail job.",
+    "cand1": "Мне рассказали об этом коллеги по работе на моей первой работе в розничной торговле.",
+    "sys1": "Online-W",
+    "cand2": "Мне это рассказали коллеги на моей первой работе в сфере розничной торговли.",
+    "sys2": "refA"
+},
+{
+    "id": 25,
+    "src": "These two guys came to the store.",
+    "cand1": "Эти два парня пришли в магазин.",
+    "sys1": "Promt",
+    "cand2": "В магазин пришли два парня.",
+    "sys2": "Online-W"
+},
+{
+    "id": 26,
+    "src": "One of them was pretty infamous in town for always being in trouble with the law.",
+    "cand1": "Один из них был довольно печально известен в городе за то, что всегда был в неприятностях с законом.",
+    "sys1": "Online-A",
+    "cand2": "Один из них был печально известен в городе тем, что у него всегда были проблемы с законом.",
+    "sys2": "Online-Y"
+},
+{
+    "id": 27,
+    "src": "After a while of browsing, the infamous one left and went back to his vehicle while the other one took a shopping cart, and put a large 500 dollar socket set in it.",
+    "cand1": "Осмотревшись немного, тот, что был печально известным, ушел и вернулся к машине, пока другой взял тележку для покупок и положил в нее большой набор инструментов за 500 долларов.",
+    "sys1": "refA",
+    "cand2": "После некоторого времени, проведенного в магазине, печально известный парень ушел и вернулся к своей машине, а другой взял тележку и положил в нее большой набор торцевых головок стоимостью 500 долларов.",
+    "sys2": "Online-W"
+},
+{
+    "id": 28,
+    "src": "This accomplice then waited until the two cashiers at the exit door were busy, then walked right by them and out the door.",
+    "cand1": "Затем этот сообщник подождал, пока две кассирши у выходной двери были заняты, затем прошел мимо них и вышел за дверь.",
+    "sys1": "Online-B",
+    "cand2": "Затем этот сообщник дождался, пока двое кассиров у выходной двери будут заняты, затем прошел прямо мимо них и вышел за дверь.",
+    "sys2": "Promt"
+},
+{
+    "id": 29,
+    "src": "Both of them noticed, and asked each other if the guy paid.",
+    "cand1": "Они оба заметили это и спросили друг друга, заплатил ли парень.",
+    "sys1": "Online-G",
+    "cand2": "Оба кассира заметили это и спросили друг друга, заплатил ли парень.",
+    "sys2": "Online-W"
+},
+{
+    "id": 30,
+    "src": "When it was confirmed he didn’t, one ran after him.",
+    "cand1": "Когда это подтвердилось, что он этого не сделал, один побежал за ним.",
+    "sys1": "Online-A",
+    "cand2": "Когда выяснилось, что это не так, один побежал за ним.",
+    "sys2": "Online-B"
+},
+{
+    "id": 31,
+    "src": "I was told the cashier shouted for him to stop as she chased after him, but he began running with the cart to the getaway vehicle.",
+    "cand1": "Мне рассказали, что когда кассир погналась за ним, она крикнула, чтобы тот остановился, но он побежал с тележкой к машине для побега.",
+    "sys1": "refA",
+    "cand2": "Мне сказали, что кассирша крикнула ему, чтобы он остановился, когда она погналась за ним, но он побежал с тележкой к машине для бегства.",
+    "sys2": "Online-G"
+},
+{
+    "id": 32,
+    "src": "I don’t know if he was one of those guys who liked wearing his pants low, or he didn’t have a belt on.",
+    "cand1": "Я не знаю, был ли он одним из тех парней, которым нравилось носить штаны низко, или у него не было ремня.",
+    "sys1": "Online-B",
+    "cand2": "Я не знаю, был ли он одним из тех парней, которые любят носить брюки низко, или на нем не было ремня.",
+    "sys2": "Online-W"
+}]

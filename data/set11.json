@@ -1,0 +1,80 @@
+[{
+    "id": 9,
+    "src": "Maybe you've seen a dog like this one before, or you've spent time running on a beach like this one, and that further evokes thoughts and memories of a past vacation, past times to the beach, times spent running around with other dogs.",
+    "cand1": "Возможно, вы уже видели такую собаку или проводили время, бегая по пляжу, подобному этому, и это еще больше вызывает мысли и воспоминания о прошлых каникулах, прошлых временах на пляже, бегах с другими собаками.",
+    "sys1": "Online-Y",
+    "cand2": "Может быть, вы уже видели такую собаку, как эта, или проводили время, бегая по пляжу, как эта, и это вызывает мысли и воспоминания о прошлом отпуске, о прошлых походах на пляж, о времени, проведенном в компании других собак.",
+    "sys2": "Online-W"
+},
+{
+    "id": 35,
+    "src": "CEOs and scientists have weighed in on what they think the artificial intelligence technology of the future will be.",
+    "cand1": "Руководители компаний и ученые взвесили, какими, по их мнению, будут технологии искусственного интеллекта будущего.",
+    "sys1": "Online-G",
+    "cand2": "Руководители и ученые взвесили вопрос о том, какой, по их мнению, будет технология искусственного интеллекта будущего.",
+    "sys2": "Online-B"
+},
+{
+    "id": 45,
+    "src": "We can communicate with foresight about the aspects of technology that could be more beneficial or could be more problematic over time.",
+    "cand1": "Мы можем общаться с предвидением об аспектах технологии, которые могут быть более полезными или могут быть более проблематичными с течением времени.",
+    "sys1": "Online-A",
+    "cand2": "Мы можем общаться с предвидением о тех аспектах технологии, которые могут быть более полезными или могут быть более проблематичными с течением времени.",
+    "sys2": "FacebookAI"
+},
+{
+    "id": 61,
+    "src": "Technology built on understanding images and generating language, evolving into technology that helps people who are visually impaired be better able to access the visual world.",
+    "cand1": "Технологии, основанные на понимании изображений и генерировании языка, превращаются в технологии, которые помогают слабовидящим людям лучше получать доступ к визуальному миру.",
+    "sys1": "refA",
+    "cand2": "Технологии, основанные на понимании изображений и генерировании языка, развиваются в технологию, которая помогает людям с ослабленным зрением лучше получать доступ к визуальному миру.",
+    "sys2": "Online-B"
+},
+{
+    "id": 70,
+    "src": "Technology that aids and assists those of us with neurological conditions or other disabilities in order to make life equally challenging for everyone.",
+    "cand1": "Технология, которая помогает и помогает тем из нас, кто страдает неврологическими заболеваниями или другими ограниченными возможностями, чтобы сделать жизнь одинаково комфортной для всех.",
+    "sys1": "Online-W",
+    "cand2": "Технологии, которые помогают и помогают тем из нас с неврологическими заболеваниями или другими нарушениями, чтобы сделать жизнь одинаково сложной для всех.",
+    "sys2": "Online-Y"
+},
+{
+    "id": 88,
+    "src": "And in the time since Galileo pointed that rudimentary telescope at the celestial bodies, the known universe has come to us through light, across vast eras in cosmic history.",
+    "cand1": "И за время, прошедшее с тех пор, как Галилей направил этот рудиментарный телескоп на небесные тела, известная нам Вселенная пришла к нам через свет, через огромные эпохи космической истории.",
+    "sys1": "FacebookAI",
+    "cand2": "И с тех пор, как Галилей направил этот элементарный телескоп на небесные тела, известная вселенная пришла к нам через свет через обширные эпохи в космической истории.",
+    "sys2": "Online-B"
+},
+{
+    "id": 131,
+    "src": "And if we were to fall towards this black hole, we would see all of that light lensed around it, and we could even start to cross into that shadow and really not notice that anything dramatic had happened.",
+    "cand1": "И если бы мы падали в сторону этой черной дыры, мы бы увидели весь этот свет, линзированный вокруг нее, и мы могли бы даже начать переходить в эту тень и не заметить, что произошло что-то драматическое.",
+    "sys1": "Online-W",
+    "cand2": "И если бы мы упали к этой черной дыре, мы бы увидели весь этот свет, рассеянный вокруг нее, и мы могли бы даже начать переходить в эту тень и действительно не заметить, что произошло что-то драматическое.",
+    "sys2": "Online-G"
+},
+{
+    "id": 143,
+    "src": "So they're crossing thousands of kilometers in a fraction of a second, and as they do so, they not only curve space, but they leave behind in their wake a ringing of space, an actual wave on space-time.",
+    "cand1": "Таким образом, они пересекают тысячи километров за долю секунды, и при этом они не только искривляют пространство, но и оставляют за собой звон пространства, настоящую волну в пространстве-времени.",
+    "sys1": "Online-G",
+    "cand2": "Они покрывают тысячи км в долю секунды, и не только искривляют тем самым пространство, но и оставляют за собой след: вызывают колебания, волновой след в пространстве-времени.",
+    "sys2": "refA"
+},
+{
+    "id": 154,
+    "src": "Now of course, your head would be squeezed and stretched unhelpfully, so you might have trouble understanding what's going on.",
+    "cand1": "Теперь, конечно, ваша голова будет сжата и растянута без пользы, так что у вас могут возникнуть проблемы с пониманием того, что происходит.",
+    "sys1": "FacebookAI",
+    "cand2": "Теперь, конечно, ваша голова будет сжата и растянута бесполезно, поэтому у вас могут возникнуть проблемы с пониманием того, что происходит.",
+    "sys2": "Online-A"
+},
+{
+    "id": 245,
+    "src": "Now, in my work, I explore new frontiers for artificial intelligence, where the symbiotic relationship between man and machine can find a beneficial footing and help us to make better decisions.",
+    "cand1": "Теперь в своей работе я исследую новые горизонты искусственного интеллекта, где симбиотические отношения между человеком и машиной могут найти благоприятную основу и помочь нам принимать более правильные решения.",
+    "sys1": "Online-B",
+    "cand2": "Сейчас, в своей работе, я исследую новые границы искусственного интеллекта, где симбиотические отношения между человеком и машиной могут обрести благотворную основу и помочь нам принимать лучшие решения.",
+    "sys2": "Online-W"
+}]

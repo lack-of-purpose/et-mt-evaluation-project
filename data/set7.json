@@ -1,0 +1,80 @@
+[{
+    "id": 28,
+    "src": "US \"failures\" are holding back search for coronavirus drugs",
+    "cand1": "«Неудачи» США сдерживают поиск препаратов от коронавируса",
+    "sys1": "Online-B",
+    "cand2": "\"Неудачи\" США сдерживают поиск лекарств против коронавируса",
+    "sys2": "Online-W"
+},
+{
+    "id": 29,
+    "src": "The global effort to produce useful anti-Covid medicines is being hampered by the US because researchers are testing drugs in \"an arbitrary, willy-nilly way,\" the expert leading the UK's programme has warned.",
+    "cand1": "Глобальные усилия по производству полезных противоковидных лекарств тормозятся США, потому что исследователи тестируют лекарства \"произвольным, волей-неволей\", предупредил эксперт, возглавляющий программу Великобритании.",
+    "sys1": "Online-G",
+    "cand2": "США препятствуют глобальным усилиям по производству полезных лекарств против Covid, потому что исследователи тестируют лекарства «произвольно, волей-неволей», предупредил эксперт, возглавляющий британскую программу.",
+    "sys2": "Online-B"
+},
+{
+    "id": 30,
+    "src": "Britain's Recovery Trial programme, which has involved 12,000 patients at several hundred British hospitals, has already pinpointed one promising new drug to tackle the disease and also highlighted two others - previously thought to be potential life-savers - as being useless.",
+    "cand1": "Британская программа Recovery Trial, в которой приняли участие 12 000 пациентов в нескольких сотнях британских больниц, уже определила один перспективный новый препарат для борьбы с этим заболеванием, а еще два других, которые ранее считались потенциальными спасателями жизни, - бесполезными.",
+    "sys1": "Online-Y",
+    "cand2": "Британская программа испытаний по выздоровлению, в которой приняли участие 12000 пациентов в нескольких сотнях британских больниц, уже определила одно многообещающее новое лекарство для борьбы с этим заболеванием, а также выделила два других, которые ранее считались потенциальными спасателями жизни, как бесполезные.",
+    "sys2": "Online-B"
+},
+{
+    "id": 31,
+    "src": "But the failure of the US medical system to match this output has meant that other promising treatments that could have been cleared for widespread use have still to be evaluated.",
+    "cand1": "Но неспособность медицинской системы США соответствовать этому результату означает, что другие многообещающие методы лечения, которые могли бы быть одобрены для широкого использования, все еще должны быть оценены.",
+    "sys1": "FacebookAI",
+    "cand2": "Но неспособность медицинской системы США соответствовать этому результату означала, что другие многообещающие методы лечения, которые могли быть разрешены для широкого использования, все еще нуждаются в оценке.",
+    "sys2": "Online-B"
+},
+{
+    "id": 32,
+    "src": "In particular, convalescent plasma (blood plasma that is taken from Covid-19 patients and which contains antibodies that could protect others against the disease) has still to be properly tested on a large-scale randomised trial.",
+    "cand1": "В частности, плазма выздоравливающих (плазма крови, взятая у пациентов с Covid-19 и содержащая антитела, которые могут защитить других от болезни) еще должна быть должным образом протестирована в крупномасштабном рандомизированном исследовании.",
+    "sys1": "Online-B",
+    "cand2": "В частности, плазма выздоравливающих пациентов (плазма крови, взятая у больных COVID-19 и содержащая антитела, вероятно, способные защитить от болезни других) все еще ожидает серьезного крупномасштабного исследования методом случайной выборки.",
+    "sys2": "refA"
+},
+{
+    "id": 33,
+    "src": "\"Tens of thousands of people have already been given convalescent plasma in the US but these treatments were not randomised,\" said Professor Martin Landray, one of the founders of the Recovery programme.",
+    "cand1": "«Десятки тысяч людей уже получили реконвалесцентную плазму в США, но эти методы лечения не были рандомизированы», - сказал профессор Мартин Ландрей, один из основателей программы восстановления.",
+    "sys1": "Online-A",
+    "cand2": "«Десятки тысяч людей в США уже получили плазму выздоравливающих, но эти методы лечения не были рандомизированы», - сказал профессор Мартин Ландрей, один из основателей программы Recovery.",
+    "sys2": "Online-B"
+},
+{
+    "id": 34,
+    "src": "\"They just give individuals convalescent plasma in the hope it will work. Vast quantities have been given and they still have no idea whether it helps or harms or has no impact,\" added Landray, an expert in the setting up of large-scale drug trials.",
+    "cand1": "«Они просто дают пациентам выздоравливающую плазму в надежде, что она сработает. Были даны огромные количества, и они до сих пор не знают, помогает ли это, вредит или нет», - добавил Ландрей, эксперт по созданию крупномасштабных лекарств. испытания.",
+    "sys1": "Online-B",
+    "cand2": "\"Пациентам просто вводят реконвалесцентную плазму и надеятся, что она сработает. Уже были были использованы большие запасы плазмы, и никто до сих пор не понимает, помогает ли это, вредит, или не имеет никакого эффекта,\" — добавил Лэндрей, эксперт по проведению глобальных клинических исследований.",
+    "sys2": "refB"
+},
+{
+    "id": 35,
+    "src": "The US is failing to do large, randomised trials and that ends up providing bad medicine",
+    "cand1": "США не проводят крупных рандомизированных исследований, и это приводит к тому, что они предоставляют плохие лекарства",
+    "sys1": "Online-G",
+    "cand2": "В США не удается провести крупные рандомизированные испытания, что в конечном итоге приводит к плохим лекарствам.",
+    "sys2": "Online-B"
+},
+{
+    "id": 36,
+    "src": "Randomised drug trials are the gold standard for pinpointing useful medicines.",
+    "cand1": "Рандомизированные испытания лекарств являются золотым стандартом для того, чтобы определить полезные лекарства.",
+    "sys1": "Online-Y",
+    "cand2": "Рандомизированные испытания лекарств - золотой стандарт для точного определения полезных лекарств.",
+    "sys2": "Online-B"
+},
+{
+    "id": 37,
+    "src": "They remove unconscious biases that might cloud clinicians' judgments.",
+    "cand1": "Они устраняют бессознательные предубеждения, которые могут омрачить суждения врачей.",
+    "sys1": "Online-B",
+    "cand2": "Они устраняют неосознанные предубеждения, которые могут повлиять на суждения врачей.",
+    "sys2": "Online-W"
+}]

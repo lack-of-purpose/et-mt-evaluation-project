@@ -1,0 +1,80 @@
+[{
+    "id": 83,
+    "src": "Press and hold the power button until you see the words \"Powered off\" at the top of the screen.",
+    "cand1": "Нажмите и удерживайте кнопку питания до тех пор, пока в верхней части экрана не появится надпись \"Выключено\".",
+    "sys1": "Online-G",
+    "cand2": "Нажимайте и удерживайте кнопку питания до тех пор, пока в верхней части экрана не появится надпись «Питание отключено».",
+    "sys2": "Promt"
+},
+{
+    "id": 70,
+    "src": "This will delete the information on your eReader but you can make a back up and transfer the information again afterwards",
+    "cand1": "Это приведет к удалению информации из вашей электронной книги, но вы можете создать резервную копию и перенести информацию позже.",
+    "sys1": "Online-Y",
+    "cand2": "Это приведет к удалению информации на вашем eReader, но вы можете сделать резервную копию и перенести информацию снова после этого.",
+    "sys2": "Online-W"
+},
+{
+    "id": 122,
+    "src": "The order was processed as a pick up order that means you chose it to be picked up by you.",
+    "cand1": "Заказ был обработан как заказ на самовывоз, что означает, что вы выбрали, чтобы его забрали вы.",
+    "sys1": "Online-B",
+    "cand2": "Заказ был обработан как заказ на самовывоз, что означает, что вы выбрали его для получения вами.",
+    "sys2": "Online-A"
+},
+{
+    "id": 144,
+    "src": "The technology development has been currently completed, and it is expected to take time for commercialization.",
+    "cand1": "Работа над технологией на данный момент завершена, ожидается, что в продажу она поступит через некоторое время.",
+    "sys1": "refA",
+    "cand2": "Разработка технологии в настоящее время завершена, и ожидается, что для коммерциализации потребуется время.",
+    "sys2": "Online-Y"
+},
+{
+    "id": 170,
+    "src": "They were released to support protesters on trial for toppling a slave trader statue during a Black Lives Matter march.",
+    "cand1": "Они были освобождены, чтобы поддержать протестующих, которых судят за свержение статуи работорговца во время марша Black Lives Matter.",
+    "sys1": "Promt",
+    "cand2": "Они были выпущены в поддержку протестующих, которых судят за свержение статуи работорговца во время марша Black Lives Matter.",
+    "sys2": "Online-W"
+},
+{
+    "id": 152,
+    "src": "According to Professor Lee, Omicron has a strong signal for N genes in PCR tests but has a weak signal for S genes.",
+    "cand1": "По словам профессора Ли, Omicron имеет сильный сигнал для генов N в тестах ПЦР, но слабый сигнал для генов S.",
+    "sys1": "Online-B",
+    "cand2": "По словам профессора Ли, Омикрон имеет сильный сигнал для N генов в ПЦР-тестах, но имеет слабый сигнал для S генов.",
+    "sys2": "Online-G"
+},
+{
+    "id": 201,
+    "src": "For quality purposes this chat interaction will be closed, please remember you can always come back and we will be happy to continue assisting you.",
+    "cand1": "В целях качества это взаимодействие в чате будет закрыто, пожалуйста, помните, что вы всегда можете вернуться, и мы будем рады продолжить помогать вам.",
+    "sys1": "Online-A",
+    "cand2": "В целях качества общение в чате будет закрыто, помните, что вы всегда можете вернуться, и мы будем рады продолжить вам помощь.",
+    "sys2": "Online-Y"
+},
+{
+    "id": 217,
+    "src": "We dispatch items with the expectation of a service being provided by the couriers, but sometimes they do disappoint and this can't be our fault.",
+    "cand1": "Мы отправляем посылки, полагаясь на услуги курьеров, однако иногда они не оправдывают ожиданий, это не наша вина.",
+    "sys1": "refA",
+    "cand2": "Мы отправляем товары с расчетом на обслуживание курьерами, но иногда они разочаровывают, и это не может быть нашей виной.",
+    "sys2": "Online-W"
+},
+{
+    "id": 251,
+    "src": "From a single dashboard, you can monitor your security and identity protection settings, and even view the history of files scanned and downloads analyzed.",
+    "cand1": "С помощью единой панели мониторинга можно отслеживать параметры безопасности и защиты личных данных, а также просматривать историю проверенных файлов и проанализированных загрузок.",
+    "sys1": "Promt",
+    "cand2": "С единой панели мониторинга можно отслеживать параметры безопасности и защиты личных данных и даже просматривать историю отсканированных и проанализированных загрузок файлов.",
+    "sys2": "Online-A"
+},
+{
+    "id": 317,
+    "src": "Detectives have been gathering CCTV and other evidence as they try to piece together what happened and identify and trace who stabbed the teenager.",
+    "cand1": "Детективы собирают записи с камер видеонаблюдения и другие улики, пытаясь собрать воедино то, что произошло, а также установить и проследить, кто нанес удар ножом подростку.",
+    "sys1": "Online-G",
+    "cand2": "Детективы собирают камеры видеонаблюдения и другие доказательства, пытаясь собрать воедино произошедшее, идентифицировать и отследить, кто ударил подростка ножом.",
+    "sys2": "Online-Y"
+}]

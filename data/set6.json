@@ -1,0 +1,80 @@
+[{
+    "id": 1,
+    "src": "Dominic Raab: Government can't make apologies for Spain quarantine decision",
+    "cand1": "Доминик Рааб: Правительство не может принести извинения за решение о карантине в Испании",
+    "sys1": "Online-B",
+    "cand2": "Доминик Рааб: Правительство не может принести извинения за решение Испании о карантине",
+    "sys2": "Online-Y"
+},
+{
+    "id": 2,
+    "src": "Dominic Raab has defended the Government's decision to re-introduce quarantine measures on Spain at short notice.",
+    "cand1": "Доминик Рааб выступил в защиту решения правительства о повторном введении карантинных мер в Испании в кратчайшие сроки.",
+    "sys1": "Online-B",
+    "cand2": "Доминик Рааб выступил в защиту решения правительства о введении карантина в Испании в кратчайшие сроки.",
+    "sys2": "Online-W"
+},
+{
+    "id": 3,
+    "src": "Ministers announced on Saturday that holidaymakers who had not returned from Spain and its islands by midnight would be forced to self-isolate for 14 days.",
+    "cand1": "Министры объявили в субботу, что отдыхающие, которые не вернулись из Испании и ее островов к полуночи, будут вынуждены самоизолироваться в течение 14 дней.",
+    "sys1": "Online-G",
+    "cand2": "В субботу министры объявили, что отдыхающие, которые не вернутся из Испании и ее островов к полуночи, будут вынуждены самоизолироваться на 14 дней.",
+    "sys2": "Online-B"
+},
+{
+    "id": 4,
+    "src": "The country had been on a list of \"travel corridor\" nations deemed safe to visit by Downing Street, but a recent surge in coronavirus cases has sparked fears of a second wave of the disease.",
+    "cand1": "Страна была в списке стран «коридора путешествий», которые Даунинг-стрит считала безопасными для посещения, но недавний всплеск случаев коронавируса вызвал опасения по поводу второй волны заболевания.",
+    "sys1": "Online-B",
+    "cand2": "Страна была в списке стран «туристического коридора», которые считались безопасными для посещения Даунинг-стрит, но недавний всплеск случаев коронавируса вызвал опасения по поводу второй волны заболевания.",
+    "sys2": "Online-A"
+},
+{
+    "id": 5,
+    "src": "On Sunday, the Foreign Secretary defended the sudden reimposition of restrictions as a \"real-time response\" to a worrying spike in infections reported in the region.",
+    "cand1": "В воскресенье министр иностранных дел выступил в защиту внезапного повторного введения ограничений как \"реакции в реальном времени\" на тревожный всплеск инфекций, зарегистрированных в регионе.",
+    "sys1": "FacebookAI",
+    "cand2": "В воскресенье министр иностранных дел защищал внезапное возобновление ограничений как «реакцию в реальном времени» на тревожный всплеск инфекций, о которых сообщалось в регионе.",
+    "sys2": "Online-B"
+},
+{
+    "id": 6,
+    "src": "He said the situation was then assessed yesterday afternoon \"and we took the decision as swiftly as we could.\"",
+    "cand1": "Он рассказал, что вчера днем ситуацию оценили, и «решение было принято так быстро, насколько возможно».",
+    "sys1": "refB",
+    "cand2": "Он сказал, что вчера днем была проведена оценка ситуации, «и мы приняли решение как можно быстрее».",
+    "sys2": "Online-B"
+},
+{
+    "id": 7,
+    "src": "\"We can't make apologies for doing so,\" he added.",
+    "cand1": "«Мы не можем извиниться за это», - добавил он.",
+    "sys1": "Online-B",
+    "cand2": "“Мы не можем извиняться за этот поступок”, - добавил он.",
+    "sys2": "refA"
+},
+{
+    "id": 8,
+    "src": "\"We must be able to take swift, decisive action, particularly in relation to localised, or internationally in relation to Spain or a particular country, where we see we must take action.\"",
+    "cand1": "«Мы должны быть в состоянии предпринять быстрые, решительные действия, особенно в отношении локальных или международных отношений в отношении Испании или конкретной страны, где, как мы видим, мы должны действовать».",
+    "sys1": "Online-B",
+    "cand2": "\"Мы должны быть в состоянии принять быстрые, решительные меры, особенно в отношении локальных, или международных мер в отношении Испании или конкретной страны, когда мы видим, что должны принять меры\".",
+    "sys2": "Online-W"
+},
+{
+    "id": 9,
+    "src": "\"Otherwise, we risk re-infection into the UK, potentially a second wave here and then another lockdown.\"",
+    "cand1": "«В противном случае мы рискуем повторно заразиться в Великобритании, потенциально вторая волна здесь, а затем еще один локдаун».",
+    "sys1": "Online-A",
+    "cand2": "«В противном случае мы рискуем повторно заразиться в Великобритании, что может вызвать здесь вторую волну, а затем еще одну изоляцию».",
+    "sys2": "Online-B"
+},
+{
+    "id": 10,
+    "src": "Transport secretary among Spain holidaymakers forced to quarantine",
+    "cand1": "Министра транспорта среди отдыхающих Испании отправили на карантин",
+    "sys1": "Online-B",
+    "cand2": "Министр транспорта среди отдыхающих в Испании, вынужденных находиться на карантине",
+    "sys2": "FacebookAI"
+}]

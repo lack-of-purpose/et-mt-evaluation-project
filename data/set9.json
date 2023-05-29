@@ -1,0 +1,80 @@
+[{
+    "id": 140,
+    "src": "His wife denied she had suffered any problems with him and attributed his behavior to psychological issues.",
+    "cand1": "Его жена отрицала, что у нее возникли проблемы с ним и относила его поведение к психологическим проблемам.",
+    "sys1": "Online-Y",
+    "cand2": "Его жена отрицала, что у нее были какие-либо проблемы с ним, и объяснила его поведение психологическими проблемами.",
+    "sys2": "Online-W"
+},
+{
+    "id": 143,
+    "src": "Prosecution is one of the most important pillars in eliminating child abuse, he added, stressing the importance of cooperation between the council and Public Prosecution in this regard.",
+    "cand1": "Он добавил, что судебное преследование является одним из важнейших столпов в деле искоренения жестокого обращения с детьми, подчеркнув важность сотрудничества между советом и государственным обвинением в этой связи.",
+    "sys1": "Online-G",
+    "cand2": "Он добавил, что судебное преследование является одним из важнейших столпов в искоренении жестокого обращения с детьми, подчеркнув важность сотрудничества между советом и прокуратурой в этом отношении.",
+    "sys2": "Online-B"
+},
+{
+    "id": 172,
+    "src": "Demonstrators broke windows, spray painted graffiti, shot fireworks and pointed lasers at officers, the Oakland department said on Twitter.",
+    "cand1": "Демонстранты разбивали окна, распыляли граффити, стреляли фейерверками и направляли лазеры на офицеров, сообщили в Twitter департамент Окленда.",
+    "sys1": "Online-A",
+    "cand2": "Демонстранты разбили окна, нанесли граффити краской из баллончика, выпускали фейерверки и направляли лазеры на полицейских, сообщило отделение в Окленде в Твиттере.",
+    "sys2": "refB"
+},
+{
+    "id": 242,
+    "src": "Scientists monitor the clarity of Lake Tahoe every year by dropping a white disc, then measuring how far down they can see it.",
+    "cand1": "Ученые следят за прозрачностью озера Тахо каждый год, бросая белый диск, а затем измеряя, как далеко они могут его видеть.",
+    "sys1": "FacebookAI",
+    "cand2": "Ученые ежегодно измеряют прозрачность озера Тахо, опуская белый диск и затем определяя, как глубоко его видно.",
+    "sys2": "refA"
+},
+{
+    "id": 277,
+    "src": "According to the Spanish newspaper, Barcelona have already identified their transfer targets for next season - with Argentinian forward Lautaro Martinez top of their hit list.",
+    "cand1": "По данным испанской газеты, «Барселона» уже определила свои трансферные цели на следующий сезон - аргентинский нападающий Лаутаро Мартинес возглавляет их список попаданий.",
+    "sys1": "Online-B",
+    "cand2": "По данным испанской газеты, \"Барселона\" уже определилась со своими трансферными целями на следующий сезон - аргентинский нападающий Лаутаро Мартинес возглавляет их список.",
+    "sys2": "Online-W"
+},
+{
+    "id": 288,
+    "src": "Tensions have been heightened at recent protests against racial injustice since federal officials were sent to quell demonstrations in Portland, Oregon.",
+    "cand1": "Напряженность усилилась во время недавних протестов против расовой несправедливости с тех пор, как федеральные чиновники были направлены для подавления демонстраций в Портленде, штат Орегон.",
+    "sys1": "Online-Y",
+    "cand2": "Напряженность усилилась в связи с недавними протестами против расовой несправедливости с тех пор, как федеральные чиновники были отправлены для подавления демонстраций в Портленде, штат Орегон.",
+    "sys2": "Online-A"
+},
+{
+    "id": 311,
+    "src": "This policy keeps workers employed at reduced hours and pay, with the government compensating some of the shortfall in wages.",
+    "cand1": "Эта политика удерживает работников, занятых по сокращенным часам и заработной плате, при этом правительство компенсирует некоторую нехватку заработной платы.",
+    "sys1": "Online-G",
+    "cand2": "Эта политика позволяет работникам работать по сокращенному графику и получать меньшую зарплату, при этом правительство компенсирует часть недополученной заработной платы.",
+    "sys2": "FacebookAI"
+},
+{
+    "id": 363,
+    "src": "The Airport Operators Association said the new measures would \"further damage what is already a fragile restart of the aviation sector which continues to face the biggest challenge in its history.\"",
+    "cand1": "По заявлению Ассоциации операторов аэропортов, новые меры \"нанесут дальнейший урон авиационной отрасли, которая осторожно возобновляет работу и перед которой по-прежнему стоят крупнейшие трудности в ее истории\".",
+    "sys1": "refB",
+    "cand2": "Ассоциация операторов аэропортов заявила, что новые меры \"нанесут еще больший ущерб и без того хрупкому процессу восстановления авиационной отрасли, которая продолжает сталкиваться с самыми серьезными трудностями в истории\".",
+    "sys2": "refA"
+},
+{
+    "id": 324,
+    "src": "The most important lesson from the Covid-19 pandemic is the importance of working together on problems that affect the entire human race.",
+    "cand1": "Самый важный урок пандемии Ковид-19 - это важность совместной работы над проблемами, которые затрагивают все человечество.",
+    "sys1": "Online-W",
+    "cand2": "Самый важный урок пандемии Covid-19 - это важность совместной работы над проблемами, которые затрагивают весь человеческий род.",
+    "sys2": "Online-B"
+},
+{
+    "id": 464,
+    "src": "\"We've worked closely and constructively with the sector on the challenges they face and they have brought forward some creative ideas on how they can begin to operate safely.",
+    "cand1": "«Мы тесно и конструктивно сотрудничаем с сектором в решении проблем, с которыми они сталкиваются, и они выдвинули несколько творческих идей о том, как начать безопасную работу.",
+    "sys1": "Online-Y",
+    "cand2": "«Мы тесно и конструктивно работали с сектором над проблемами, с которыми они сталкиваются, и они выдвинули некоторые творческие идеи о том, как они могут начать безопасно работать.",
+    "sys2": "Online-A"
+}]

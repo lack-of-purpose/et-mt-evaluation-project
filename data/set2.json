@@ -1,0 +1,80 @@
+[{
+    "id": 1,
+    "src": "I see it all the time in my line of work.",
+    "cand1": "Я постоянно сталкиваюсь с этим в своей работе.",
+    "sys1": "Online-G",
+    "cand2": "Я все время вижу это в своей линии работы.",
+    "sys2": "Promt"
+},
+{
+    "id": 2,
+    "src": "And it doesn’t even have to be life or death to be frustrating.",
+    "cand1": "И это даже не должно быть вопросом жизни или смерти, чтобы разочароваться.",
+    "sys1": "Online-B",
+    "cand2": "И это даже не обязательно вопрос жизни и смерти, чтобы расстраивать.",
+    "sys2": "Online-G"
+},
+{
+    "id": 3,
+    "src": "Had a recent patient who needed a very specific knee procedure to walk normally and improve quality of life.",
+    "cand1": "Недавно у меня был пациент, которому потребовалась очень специфическая процедура на колене, чтобы нормально ходить и улучшить качество жизни.",
+    "sys1": "Online-G",
+    "cand2": "Был недавний пациент, который нуждался в очень специфической процедуре коленного сустава, чтобы нормально ходить и улучшить качество жизни.",
+    "sys2": "Online-A"
+},
+{
+    "id": 4,
+    "src": "Peer to peer failed.",
+    "cand1": "Одноранговый узел потерпел неудачу.",
+    "sys1": "Online-G",
+    "cand2": "Ошибка одноранговой сети.",
+    "sys2": "refA"
+},
+{
+    "id": 5,
+    "src": "Insurance says it’s not medically necessary.",
+    "cand1": "Страховая компания говорит, что это не является медицинской необходимостью.",
+    "sys1": "Online-W",
+    "cand2": "Страховка говорит, что это не является необходимым с медицинской точки зрения.",
+    "sys2": "Online-G"
+},
+{
+    "id": 6,
+    "src": "We appeal.",
+    "cand1": "Мы обращаемся с апелляцией.",
+    "sys1": "Online-A",
+    "cand2": "Мы подаем апелляцию.",
+    "sys2": "Online-G"
+},
+{
+    "id": 7,
+    "src": "They say no again.",
+    "cand1": "Они снова говорят \"нет\".",
+    "sys1": "Online-G",
+    "cand2": "Они снова говорят нет.",
+    "sys2": "Online-B"
+},
+{
+    "id": 8,
+    "src": "We go to third party appeal.",
+    "cand1": "Мы обращаемся к третьей стороне.",
+    "sys1": "Online-W",
+    "cand2": "Мы обращаемся к третьей стороне с апелляцией.",
+    "sys2": "Online-G"
+},
+{
+    "id": 9,
+    "src": "We submit all the pertinent medical research supporting the need for the procedure.",
+    "cand1": "Мы представляем все соответствующие медицинские исследования, подтверждающие необходимость процедуры.",
+    "sys1": "Online-A",
+    "cand2": "Мы предоставляем все соответствующие медицинские исследования, подтверждающие необходимость этой процедуры.",
+    "sys2": "Online-G"
+},
+{
+    "id": 10,
+    "src": "We even included the second opinion of a different surgeon outside of our program — yeah, he recommends the procedure.",
+    "cand1": "Мы даже приложили второе мнение другого хирурга, не входящего в нашу программу, - да, он рекомендует процедуру.",
+    "sys1": "Online-W",
+    "cand2": "Мы даже включили второе мнение другого хирурга за пределами нашей программы — да, он рекомендует процедуру.",
+    "sys2": "Online-A"
+}]

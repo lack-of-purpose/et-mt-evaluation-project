@@ -1,0 +1,80 @@
+[{
+    "id": 11,
+    "src": "24 hours later, they hit us back with the final “No.",
+    "cand1": "24 часа спустя они ударили нас в ответ финальным «Нет.",
+    "sys1": "Online-A",
+    "cand2": "24 часа спустя они ответили нам финальным «No.",
+    "sys2": "Online-B"
+},
+{
+    "id": 12,
+    "src": "Not medically necessary.”",
+    "cand1": "С медицинской точки зрения это не необходимо».",
+    "sys1": "Online-A",
+    "cand2": "Не является необходимым с медицинской точки зрения».",
+    "sys2": "refA"
+},
+{
+    "id": 13,
+    "src": "My surgeon flips his shit and is like “FINE!",
+    "cand1": "Мой хирург обалдел и сказал: \"Ладно!",
+    "sys1": "Online-W",
+    "cand2": "Мой хирург переворачивает свое дерьмо и говорит: «Отлично!",
+    "sys2": "Online-A"
+},
+{
+    "id": 14,
+    "src": "But you’re going to fucking tell me which procedure you would recommend, because I don’t know another one that is gonna help this poor kid”.",
+    "cand1": "Но ты, блять, скажешь мне, какую процедуру ты бы порекомендовал, потому что я не знаю другой, которая помогла бы этому бедному ребенку»",
+    "sys1": "Online-B",
+    "cand2": "Но ты будешь чертовски говорить мне, какую процедуру ты бы порекомендовал, потому что я не знаю другой, которая поможет этому бедному ребенку».",
+    "sys2": "Online-A"
+},
+{
+    "id": 15,
+    "src": "Of course, they don’t.",
+    "cand1": "Конечно, нет.",
+    "sys1": "Online-A",
+    "cand2": "Конечно, они этого не делают.",
+    "sys2": "Online-G"
+},
+{
+    "id": 16,
+    "src": "And this kid is screwed.",
+    "cand1": "И этот парень облажался.",
+    "sys1": "Online-G",
+    "cand2": "И этот малыш прикручен.",
+    "sys2": "Online-A"
+},
+{
+    "id": 17,
+    "src": "No other option.",
+    "cand1": "Другого варианта нет.",
+    "sys1": "Online-A",
+    "cand2": "Других вариантов нет.",
+    "sys2": "Online-W"
+},
+{
+    "id": 18,
+    "src": "As it turns out this procedure is generally hated by insurance because it’s pretty expensive.",
+    "cand1": "Как оказалось, эта процедура, как правило, ненавидится страховкой, потому что она довольно дорогая.",
+    "sys1": "Online-A",
+    "cand2": "Как оказалось, страховщики ненавидят эту процедуру, потому что она довольно дорогая.",
+    "sys2": "Online-B"
+},
+{
+    "id": 19,
+    "src": "We always have to fight for it, but they’ll usually agree after an appeal.",
+    "cand1": "Мы всегда должны бороться за это, но они обычно соглашаются после апелляции.",
+    "sys1": "Online-A",
+    "cand2": "Нам всегда приходится бороться за это, но они обычно соглашаются после апелляции.",
+    "sys2": "Online-G"
+},
+{
+    "id": 20,
+    "src": "Not this time.",
+    "cand1": "Но не в этот раз.",
+    "sys1": "Online-W",
+    "cand2": "Не сейчас.",
+    "sys2": "Online-A"
+}]
