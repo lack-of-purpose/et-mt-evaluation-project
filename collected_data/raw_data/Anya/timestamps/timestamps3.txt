@@ -1,0 +1,32 @@
+End trial 1686479244.478512
+Chosen option is 2
+Start trial 1686479245.7727382
+End trial 1686479267.827052
+Chosen option is 2
+Start trial 1686479268.9775898
+End trial 1686479296.1599448
+Chosen option is 2
+Start trial 1686479297.329725
+End trial 1686479330.6735241
+Chosen option is 2
+Start trial 1686479331.9970806
+End trial 1686479403.3485343
+Chosen option is 1
+Start trial 1686479404.1182795
+End trial 1686479452.3879871
+Chosen option is 2
+Start trial 1686479453.7574499
+End trial 1686479479.7636938
+Chosen option is 1
+Start trial 1686479480.3297522
+End trial 1686479496.8425474
+Chosen option is 2
+Start trial 1686479497.6234791
+End trial 1686479547.0316958
+Chosen option is 1
+Start trial 1686479549.353698
+End trial 1686479568.349153
+Chosen option is 2
+Start trial 1686479571.6663067
+End trial 1686479573.8310635
+Chosen option is 2
