@@ -7,8 +7,10 @@
 		.screen {
 			display: none;
 			width: 100%;
-			font-size: 36px;
-			margin-top: 50px;
+			font-size: 30px;
+			margin-top: 10px;
+			font-family: monospace;
+			text-align: center;
 		}
 		
 		/* Style for the "Next" button */
@@ -36,7 +38,7 @@
 
 		.choice-button {
 			display: block;
-			margin-top: 20px;
+			margin: 20px auto;
 			padding: 10px 20px;
 			border: none;
 			background-color: #92a8d1;
@@ -60,20 +62,16 @@
 		<p>Eye-Tracking MT Evaluation Experiment</p>
 		<p>In this experiment you will be asked to:</p>
 		<ul>
-			<li>1. Read the source English sentence and two Russian translations carefully.</li>
-			<li>2. Choose the best translation by clicking button '1' or '2' respectivelty.</li>
-			<li>3. Click on problematic words in worst translation.</li>
-			<li>4. Try not to change the position of your head through the experiment.</li>
+			<li> Read the source English sentence and two Russian translations carefully.</li>
+			<li> Choose the best translation by clicking button '1' or '2' respectivelty.</li>
+			<li> Don't scroll the page before choosing the best translation.</li>
+			<li> Try not to change the position of your head during the experiment.</li>
 		</ul>
 	</div>
 	<!-- Next button -->
 	<button class="next-button" id="next-button" onclick="nextClick()">Next</button>
 	<!-- End button -->
 	<button class="next-button" id="next-button" onclick="endClick()">End</button>
-	
-	<!-- Clicked words list -->
-	<!--<h2>Clicked Words:</h2>-->
-	<!--<ul id="clicked-words"></ul>-->
 	
 	<script>
 		
@@ -85,15 +83,9 @@
         var startButton = document.getElementById("start-button");
 		var clickedWordsList = document.getElementById("clicked-words");
 		var clickedWords = [];
+		var wordsPosition = [];
 		var indices = Array.from(Array(10).keys());
 		console.log(indices);
-		//console.log(indices);
-		//var permutation = shuffle(indices);
-		//console.log(permutation);
-
-		// Add click event listener to Next button
-		//nextButton.addEventListener("click", nextScreen);
-		//startButton.addEventListener("click", nextScreen); 
 
 		// To shuffle the array of trial indices
 		function shuffle(array) {
@@ -117,28 +109,17 @@
 		function displayRandom(arr) {
 			var out = "";
 			console.log(this.currentScreen);
-			i = indices[this.currentScreen-2]; //permutation[this.currentScreen-2];
+			i = indices[this.currentScreen-2];
 			console.log('Element index');
 			console.log(i);
 			out += '<p>' + arr[i].src + 
 				'</p><br><p>' + arr[i].cand1 +
-				'</p><button class="choice-button" id="choice-button" onclick=" choice1Click()">1</button><br><p>' +
+				'</p><button class="choice-button" id="choice-button" onclick="choice1Click()">1</button><p>' +
 				arr[i].cand2 + 
-				'</p><button class="choice-button" id="choice-button" onclick=" choice2Click()">2</button>';
+				'</p><button class="choice-button" id="choice-button" onclick="choice2Click()">2</button>';
 			document.getElementById("screen").innerHTML = out;
 			makeAllWordsClickableAgain();
-		}
-		
-		// Function to switch between screens
-		function nextScreen() {
-			document.getElementById("screen-" + currentScreen).style.display = "none";
-			//currentScreen++;
-			//console.log(currentScreen);
-			//console.log(numScreens);
-			//if (currentScreen > numScreens) {
-			//	currentScreen = 1;
-			//}
-			//document.getElementById("screen-" + currentScreen).style.display = "block";
+			document.addEventListener('click', onClick());
 		}
 		
 		// Add click event listeners to all words
@@ -157,7 +138,6 @@
 							this.classList.add("clicked");
 							var li = document.createElement("li");
 							li.innerHTML = this.innerHTML.trim();
-							//clickedWordsList.appendChild(li);
 						}
 					});
 					paragraph.appendChild(span);
@@ -182,6 +162,7 @@
 				});
 				paragraph.appendChild(span);
 			}
+			document.addEventListener('click', onClick);
 		});
 		
 		function getData() {
@@ -194,6 +175,55 @@
 			};
 			xhttp.open('GET', '/data.json', true);
 			xhttp.send();
+		}
+
+		function findClickedWord(parentElt, x, y) {
+			if (parentElt.nodeName !== '#text') {
+				console.log('didn\'t click on text node');
+				return null;
+			}
+			var range = document.createRange();
+			var words = parentElt.textContent.split(' ');
+			var start = 0;
+			var end = 0;
+			for (var i = 0; i < words.length; i++) {
+				var word = words[i];
+				end = start+word.length;
+				range.setStart(parentElt, start);
+				range.setEnd(parentElt, end);
+				var rects = range.getClientRects();
+				var clickedRect = isClickInRects(rects);
+				if (clickedRect) {
+					return [word, start, clickedRect];
+				}
+				start = end + 1;
+			}
+			
+			function isClickInRects(rects) {
+				for (var i = 0; i < rects.length; ++i) {
+					var r = rects[i]
+					if (r.left<x && r.right>x && r.top<y && r.bottom>y) {            
+						return r;
+					}
+				}
+				return false;
+			}
+			return null;
+		}
+		function onClick(e) {
+			var clicked = findClickedWord(e.target.childNodes[0], e.clientX, e.clientY);
+			if (clicked) {
+				var word = clicked[0];
+				var start = clicked[1];
+				var r = clicked[2];
+				wordsPosition.push([word,r.left,r.top,r.right,r.bottom]);
+				fetch('/click', {
+					method: 'POST',
+					body: JSON.stringify(wordsPosition),
+				});
+				wordsPosition = [];
+				console.log('Clicked: ('+r.left+','+r.top+','+r.right+','+r.bottom+') word:'+word+' at offset '+start);
+			}
 		}
 
 		function nextClick() {
