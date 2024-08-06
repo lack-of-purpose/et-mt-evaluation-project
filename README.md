@@ -1,5 +1,6 @@
-# eye-tracking-mt-evaluation-project
+# Eye-tracking Machine Translation Quality Evaluation project
 Code for eye tracking MT evalution project (without actual eye tracking tool - Eyewarebeam was used). 
+The purpose of the project is to analyze correlation between eye movement metrics and participants' best translation choice.
 
 index.html - homepage, run on localhost:8000
 
