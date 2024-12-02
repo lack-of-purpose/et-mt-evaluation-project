@@ -11,14 +11,14 @@ names = ['participant1', 'participant2', 'participant3', 'participant4', 'partic
 def fixations_per_sentence():
     for name in names:
         for s in setn:
-            stat = parent_folder + r'\mappings\{}\set{}\h-fixes-per-sentence.csv'.format(name,s)
+            stat = parent_folder + r'\mappings\{}\set{}\fixations-per-sentence.csv'.format(name,s)
             statistics = open(stat, 'w', newline='')
             header = ['src', 'tgt1', 'tgt2']
             writer = csv.writer(statistics)
             writer.writerow(header)
             for num in nums:
                 sent = parent_folder + r'\mappings\sentence_rectangulars\rects-coords{}.csv'.format(s)
-                f = parent_folder + r'\mappings\{}\set{}\corrected\fixations\h-processed-fix{}.json'.format(name,s,num)
+                f = parent_folder + r'\mappings\{}\set{}\corrected\traces\output\coords_with_time{}_fixations.json'.format(name,s,num)
                 if not pathlib.Path(f).is_file():
                     continue
                 sentences = open(sent, 'r')
@@ -66,18 +66,19 @@ def fixations_per_sentence():
                 row.append(tgt2)
                 writer.writerow(row)
     
-def jumps_per_sentence():
+def saccades_per_sentence():
     for name in names:
         for s in setn:
-            stat = parent_folder + r'\mappings\{}\set{}\jumps-per-sentence.csv'.format(name,s)
+            stat = parent_folder + r'\mappings\{}\set{}\saccades-per-sentence.csv'.format(name,s)
             statistics = open(stat, 'w', newline='')
             header = ['src', 'tgt1', 'tgt2']
             writer = csv.writer(statistics)
             writer.writerow(header)
             for num in nums:
-                sent = parent_folder + r'\mappings\sentence_rects\rects-coords{}.csv'.format(s)
-                f = parent_folder + r'\mappings\{}\set{}\corrected\jumps\jumps{}.json'.format(name,s,num)
-
+                sent = parent_folder + r'\mappings\sentence_rectangulars\rects-coords{}.csv'.format(s)
+                f = parent_folder + r'\mappings\{}\set{}\corrected\traces\output\coords_with_time{}_saccades.json'.format(name,s,num)
+                if not pathlib.Path(f).is_file():
+                    continue
                 sentences = open(sent, 'r')
                 f_json = open(f, 'r')
                 jumps = json.load(f_json)
@@ -108,15 +109,14 @@ def jumps_per_sentence():
                 tgt2_y2 = float(sentence_rects[2][3])
                 
                 for jump in jumps:
-                    for gaze in jump:
-                        x = float(gaze[1])
-                        y = float(gaze[2])
-                        if x >= src_x1 and x <= src_x2 and y >= src_y1 and y <= src_y2:
-                            src += 1
-                        if x >= tgt1_x1 and x <= tgt1_x2 and y >= tgt1_y1 and y <= tgt1_y2:
-                            tgt1 += 1
-                        if x >= tgt2_x1 and x <= tgt2_x2 and y >= tgt2_y1 and y <= tgt2_y2:
-                            tgt2 += 1
+                    x = float(jump[0])
+                    y = float(jump[1])
+                    if x >= src_x1 and x <= src_x2 and y >= src_y1 and y <= src_y2:
+                        src += 1
+                    if x >= tgt1_x1 and x <= tgt1_x2 and y >= tgt1_y1 and y <= tgt1_y2:
+                        tgt1 += 1
+                    if x >= tgt2_x1 and x <= tgt2_x2 and y >= tgt2_y1 and y <= tgt2_y2:
+                        tgt2 += 1
 
                 row = []
                 row.append(src)

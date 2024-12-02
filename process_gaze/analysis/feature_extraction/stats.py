@@ -13,18 +13,18 @@ nums = [1,2,3,4,5,6,7,8,9,10]
 names = ['participant1', 'participant2', 'participant3', 'participant4', 'participant5', 'participant6', 'participant7', 'participant8']
 
 def check_fixations():
-    w = parent_folder + r'\mappings\{}\problematic_words.json'.format(name)
-    f = open(w, 'r')
-    words = json.load(f)
-    result = parent_folder + r'\mappings\{}\fix_stats_h.csv'.format(name)
-    res = open(result, 'w', encoding='UTF8', newline='')
-    header = ['set', 'screen', 'num_of_fixes', 'intersections']
-    writer = csv.writer(res)
-    writer.writerow(header)
     for name in names:
+        w = parent_folder + r'\mappings\{}\problematic_words.json'.format(name)
+        f = open(w, 'r')
+        words = json.load(f)
+        result = parent_folder + r'\mappings\{}\fixations_stats.csv'.format(name)
+        res = open(result, 'w', encoding='UTF8', newline='')
+        header = ['set', 'screen', 'num_of_fixes', 'intersections']
+        writer = csv.writer(res)
+        writer.writerow(header)
         for s in name_set[name]:
             for num in nums:
-                    fixes = parent_folder + r'\mappings\{}\set{}\corrected\fixations\processed-fix{}-h.json'.format(name,s,num)
+                    fixes = parent_folder + r'\mappings\{}\set{}\corrected\traces\output\coords_with_time{}_fixations.json'.format(name,s,num)
                     if not pathlib.Path(fixes).is_file():
                         continue
                     fi = open(fixes, 'r')
@@ -53,19 +53,19 @@ def check_fixations():
                     
                     writer.writerow(row)
                         
-def check_jumps():
-    w = parent_folder + r'\mappings\{}\problematic_words.json'.format(name)
-    f = open(w, 'r')
-    words = json.load(f)
-    result = parent_folder + r'\mappings\{}\jump_stats_h.csv'.format(name)
-    res = open(result, 'w', encoding='UTF8', newline='')
-    header = ['set', 'screen', 'num_of_jumps', 'intersections']
-    writer = csv.writer(res)
-    writer.writerow(header)
+def check_saccades():
     for name in names:
+        w = parent_folder + r'\mappings\{}\problematic_words.json'.format(name)
+        f = open(w, 'r')
+        words = json.load(f)
+        result = parent_folder + r'\mappings\{}\saccades_stats.csv'.format(name)
+        res = open(result, 'w', encoding='UTF8', newline='')
+        header = ['set', 'screen', 'num_of_jumps', 'intersections']
+        writer = csv.writer(res)
+        writer.writerow(header)
         for s in name_set[name]:
             for num in nums:
-                ju = parent_folder + r'\mappings\{}\set{}\corrected\jumps\jumps{}.json'.format(name,s,num)
+                ju = parent_folder + r'\mappings\{}\set{}\corrected\traces\output\coords_with_time{}_saccades.json'.format(name,s,num)
                 if not pathlib.Path(ju).is_file():
                     continue
                 j = open(ju, 'r')
@@ -85,10 +85,10 @@ def check_jumps():
                 
                 for jump in jumps:
                     for word in words_coords:
-                        if float(jump[0][1]) >= word[0] - 50 and float(jump[0][1]) <= word[2] + 50 and float(jump[0][2]) >= word[1] - 40 and float(jump[0][2]) <= word[3] + 40:
+                        if float(jump[0]) >= word[0] - 50 and float(jump[0]) <= word[2] + 50 and float(jump[1]) >= word[1] - 40 and float(jump[1]) <= word[3] + 40:
                             intrsc += 1
-                        if float(jump[1][1]) >= word[0] - 50 and float(jump[1][1]) <= word[2] + 50 and float(jump[1][2]) >= word[1] - 40 and float(jump[1][2]) <= word[3] + 40:
-                            intrsc += 1
+                        #if float(jump[1][1]) >= word[0] - 50 and float(jump[1][1]) <= word[2] + 50 and float(jump[1][2]) >= word[1] - 40 and float(jump[1][2]) <= word[3] + 40:
+                        #    intrsc += 1
                             
                 row.append(intrsc)
                 

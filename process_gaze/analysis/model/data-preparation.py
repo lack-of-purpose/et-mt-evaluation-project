@@ -7,16 +7,16 @@ names = ['participant1', 'participant2', 'participant3', 'participant4', 'partic
 columns = [2,3,8,6,4,5,7,1]
 
 for name, column in zip(names,columns):
-    all_data = parent_folder + r'\analysis\model\h-data-{}.csv'.format(name)
+    all_data = parent_folder + r'\analysis\model\data-{}.csv'.format(name)
     f = open(all_data, 'w', newline='')
     header = ['fixations_tgt1', 'jumps_tgt1', 'time_tgt1', 'fixations_tgt2', 'jumps_tgt2', 'time_tgt2', 'choice']
     writer = csv.writer(f)
     writer.writerow(header)
     for s in setn:
-        fixes = parent_folder + r'\mappings\{}\set{}\h-fixes-per-sentence.csv'.format(name,s)
+        fixes = parent_folder + r'\mappings\{}\set{}\fixations-per-sentence.csv'.format(name,s)
         fixations = open(fixes, 'r')
         fixations_reader = csv.reader(fixations, delimiter=',')
-        j = parent_folder + r'\mappings\{}\set{}\jumps-per-sentence.csv'.format(name,s)
+        j = parent_folder + r'\mappings\{}\set{}\saccades-per-sentence.csv'.format(name,s)
         jumps = open(j, 'r')
         jumps_reader = csv.reader(jumps, delimiter=',')
         st = parent_folder + r'\mappings\{}\set{}\stats.csv'.format(name,s)

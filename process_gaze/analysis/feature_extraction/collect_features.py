@@ -14,7 +14,7 @@ def collect_fixations():
             print(s)
             for num in nums:
                 tr = parent_folder + r'\mappings\{}\set{}\corrected\traces\coords_with_time{}.csv'.format(name,s,num)
-                senten = parent_folder + r'\mappings\sentence_rects\rects-coords{}.csv'.format(s)
+                senten = parent_folder + r'\mappings\sentence_rectangulars\rects-coords{}.csv'.format(s)
                 if not pathlib.Path(tr).is_file():
                     continue
                 sentences = open(senten, 'r')
