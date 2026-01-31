@@ -11,14 +11,14 @@ names = ['participant1', 'participant2', 'participant3', 'participant4', 'partic
 def fixations_per_sentence():
     for name in names:
         for s in setn:
-            stat = parent_folder + r'\mappings\{}\set{}\fixations-per-sentence.csv'.format(name,s)
+            stat = parent_folder + r'/mappings/{}/set{}/fixations-per-sentence.csv'.format(name,s)
             statistics = open(stat, 'w', newline='')
             header = ['src', 'tgt1', 'tgt2']
             writer = csv.writer(statistics)
             writer.writerow(header)
             for num in nums:
-                sent = parent_folder + r'\mappings\sentence_rectangulars\rects-coords{}.csv'.format(s)
-                f = parent_folder + r'\mappings\{}\set{}\corrected\traces\output\coords_with_time{}_fixations.json'.format(name,s,num)
+                sent = parent_folder + r'/mappings/sentence_rectangulars/rects-coords{}.csv'.format(s)
+                f = parent_folder + r'/mappings/{}/set{}/corrected/traces/output/coords_with_time{}_fixations.json'.format(name,s,num)
                 if not pathlib.Path(f).is_file():
                     continue
                 sentences = open(sent, 'r')
@@ -69,14 +69,14 @@ def fixations_per_sentence():
 def saccades_per_sentence():
     for name in names:
         for s in setn:
-            stat = parent_folder + r'\mappings\{}\set{}\saccades-per-sentence.csv'.format(name,s)
+            stat = parent_folder + r'/mappings/{}/set{}/saccades-per-sentence.csv'.format(name,s)
             statistics = open(stat, 'w', newline='')
             header = ['src', 'tgt1', 'tgt2']
             writer = csv.writer(statistics)
             writer.writerow(header)
             for num in nums:
-                sent = parent_folder + r'\mappings\sentence_rectangulars\rects-coords{}.csv'.format(s)
-                f = parent_folder + r'\mappings\{}\set{}\corrected\traces\output\coords_with_time{}_saccades.json'.format(name,s,num)
+                sent = parent_folder + r'/mappings/sentence_rectangulars/rects-coords{}.csv'.format(s)
+                f = parent_folder + r'/mappings/{}/set{}/corrected/traces/output/coords_with_time{}_saccades.json'.format(name,s,num)
                 if not pathlib.Path(f).is_file():
                     continue
                 sentences = open(sent, 'r')

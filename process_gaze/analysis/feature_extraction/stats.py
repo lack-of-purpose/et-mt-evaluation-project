@@ -14,17 +14,17 @@ names = ['participant1', 'participant2', 'participant3', 'participant4', 'partic
 
 def check_fixations():
     for name in names:
-        w = parent_folder + r'\mappings\{}\problematic_words.json'.format(name)
+        w = parent_folder + r'/mappings/{}/problematic_words.json'.format(name)
         f = open(w, 'r')
         words = json.load(f)
-        result = parent_folder + r'\mappings\{}\fixations_stats.csv'.format(name)
+        result = parent_folder + r'/mappings/{}/fixations_stats.csv'.format(name)
         res = open(result, 'w', encoding='UTF8', newline='')
         header = ['set', 'screen', 'num_of_fixes', 'intersections']
         writer = csv.writer(res)
         writer.writerow(header)
         for s in name_set[name]:
             for num in nums:
-                    fixes = parent_folder + r'\mappings\{}\set{}\corrected\traces\output\coords_with_time{}_fixations.json'.format(name,s,num)
+                    fixes = parent_folder + r'/mappings/{}/set{}/corrected/traces/output/coords_with_time{}_fixations.json'.format(name,s,num)
                     if not pathlib.Path(fixes).is_file():
                         continue
                     fi = open(fixes, 'r')
@@ -55,17 +55,17 @@ def check_fixations():
                         
 def check_saccades():
     for name in names:
-        w = parent_folder + r'\mappings\{}\problematic_words.json'.format(name)
+        w = parent_folder + r'/mappings/{}/problematic_words.json'.format(name)
         f = open(w, 'r')
         words = json.load(f)
-        result = parent_folder + r'\mappings\{}\saccades_stats.csv'.format(name)
+        result = parent_folder + r'/mappings/{}/saccades_stats.csv'.format(name)
         res = open(result, 'w', encoding='UTF8', newline='')
         header = ['set', 'screen', 'num_of_jumps', 'intersections']
         writer = csv.writer(res)
         writer.writerow(header)
         for s in name_set[name]:
             for num in nums:
-                ju = parent_folder + r'\mappings\{}\set{}\corrected\traces\output\coords_with_time{}_saccades.json'.format(name,s,num)
+                ju = parent_folder + r'/mappings/{}/set{}/corrected/traces/output/coords_with_time{}_saccades.json'.format(name,s,num)
                 if not pathlib.Path(ju).is_file():
                     continue
                 j = open(ju, 'r')
